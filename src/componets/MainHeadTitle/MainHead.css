@@ -1,0 +1,41 @@
+  .mainRes {
+      text-align: center;
+      position: relative;
+  }
+
+  .mainRes h1 {
+      font-size: 7em;
+      font-weight: 1000;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.288);
+  }
+
+  .mainRes h2 {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 4em;
+      font-weight: 1000;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+
+  }
+
+  .mainRes h2 span {
+      color: rgba(255, 231, 0, 1);
+  }
+
+  @media only screen and (max-widtH:768px) {
+      .mainRes h1 {
+          font-size: 12vw !important;
+      }
+
+      .mainRes h2 {
+          font-size: 6vw !important;
+      }
+  }

@@ -1,0 +1,14 @@
+.projectsPage{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+.projectsPage .firstSectionProjects{
+    width: 100%;
+    padding: 25px;
+}
+.projectsPage .firstSectionProjects>h1{
+    font-size: 3.5vw;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.344);
+}

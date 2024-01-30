@@ -1,0 +1,53 @@
+.expeduSection {
+    border-left: 1px solid rgb(0, 0, 0);
+    padding: 0 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.expeduSection .yearsSec {
+    width: auto;
+}
+
+.expeduSection .yearsSec h6 {
+    /* margin-inline: 20px; */
+    text-transform: uppercase;
+    border-radius: 25px;
+    background-color: rgb(49, 44, 44);
+    width: fit-content;
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+}
+
+.expeduSection h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.expeduSection h1 span {
+    color: rgb(0, 0, 0);
+}
+
+.expeduIcon {
+    position: absolute;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(255, 231, 0, 1);
+    color: black;
+    padding: 15px;
+    border-radius: 50%;
+    left: -25px;
+    top: -5px;
+}
+
+@media only screen and (max-width:768px) {
+    .expeduSection {
+        width:100%;
+    }
+}

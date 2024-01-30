@@ -1,0 +1,35 @@
+.skillGraph{
+    padding: 50px;
+    /* border: 1px solid red; */
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skillGraph h1{
+    color: black;
+    font-size: 2vw;
+}
+.progressBar{
+    width: 150px !important;
+}
+@media only screen and (max-width:590px){
+   .skillGraph:nth-child(even){
+    width: 100%;
+    padding: 10px;
+    flex-direction: row;
+    gap: 20px;
+   }
+   .skillGraph h1{
+    color: black;
+    font-size: 4vw;
+}
+   .skillGraph:nth-child(odd){
+    width: 100%;
+    padding: 50px;
+    flex-direction: row-reverse;
+    gap: 20px;
+   }
+}

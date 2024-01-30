@@ -1,0 +1,91 @@
+.servicesPage {
+    height: auto;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.servicesPage .serviceContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 25px;
+    margin: 20px 0;
+}
+.serviceContainer:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.mobileShow{
+    display: none;
+}
+.servicesPage .serviceContainer .upService {
+    height: max-content;
+    width: max-content;
+    max-width: 40%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.servicesPage .serviceContainer .upService img {
+    height: fit-content;
+    width: 100%;
+}
+
+.servicesPage .serviceContainer .downService {
+    padding: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.servicesPage .serviceContainer .downService h1{
+    text-align: center;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.641);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.servicesPage .serviceContainer .downService p {
+    text-align: start;
+    margin: 10px 0;
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width:767px) {
+    .serviceContainer {
+        flex-direction: column;
+        padding: 10px 0 !important;
+    }
+    .serviceContainer:nth-child(odd){
+        flex-direction: column;
+    }
+    .mobileShow{
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        color: black;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
+    .servicesPage .serviceContainer .downService h1{
+        display: none;
+    }
+
+    .servicesPage .serviceContainer .upService {
+        max-width: 100%;
+    }
+
+    .downService {
+        width: 100%;
+
+    }
+}

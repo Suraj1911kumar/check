@@ -1,0 +1,58 @@
+.moreAboutme {
+    height: 50px;
+    /* min-width: 200px; */
+    border: 2px solid rgba(255, 231, 0, 1);
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 20px;
+    position: relative;
+
+}
+
+.moreAboutme div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-transform: capitalize;
+}
+
+.moreAboutme span {
+    position: absolute;
+    display: block;
+    width: 5%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgba(255, 231, 0, 1);
+
+    overflow: hidden;
+    transition: 0.8s all ease;
+}
+
+.moreAboutme:hover span {
+    width: 100%;
+}
+
+.moreAboutme:hover div {
+    color: black;
+    transition: 0.9s all ease;
+}
+
+.hoverEffect {
+    background-color: rgba(255, 231, 0, 1);
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    color: black;
+    font-weight: 800;
+}

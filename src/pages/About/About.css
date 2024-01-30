@@ -1,0 +1,257 @@
+.aboutPage {
+    height: auto;
+    /* width: 100%; */
+    padding: 25px;
+}
+
+.aboutPage .mainRes {
+    text-align: center;
+    position: relative;
+}
+
+.aboutPage .mainRes h1 {
+    font-size: 7em;
+    font-weight: 1000;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.288);
+}
+
+.aboutPage .mainRes h2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    font-weight: 1000;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+}
+
+.aboutPage .mainRes h2 span {
+    color: rgba(255, 231, 0, 1);
+}
+
+.aboutPage .aboutFirst {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutPage .aboutFirst .personalInfo,
+.aboutPage .aboutFirst .personalStats {
+    width: 50%;
+    /* border: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+.aboutPage .aboutFirst .personalStats {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.aboutPage .aboutFirst .personalInfo h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: black;
+    letter-spacing: 0;
+    margin-block: 20px;
+}
+
+.aboutPage .aboutFirst .personalInfo .my-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+    grid-template-rows: repeat(5, 0.2fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutPage .aboutFirst .personalInfo .my-info h1 {
+    font-size: 18px;
+    color: black;
+    opacity: 0.9;
+    font-weight: 500;
+    margin: 5px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutPage .aboutFirst .personalInfo .my-info span {
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    font-weight: 700;
+}
+
+
+
+
+.skills {
+    display: grid;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 25px;
+}
+
+.skillsSection {
+    padding: 25px;
+}
+
+.skillsSection h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+
+.aboutLast {
+    padding: 25px;
+    display: flex;
+    width: 100%;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutLast h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.expEdu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red;    */
+    width: 100%;
+    padding: 25px;
+    gap: 50px;
+}
+
+.expEdu .exp {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* border: 1px solid red; */
+
+}
+
+.expEdu .exp .content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-block: 20px;
+}
+
+.expEdu h2 {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    color: rgba(255, 231, 0, 1);
+}
+
+@media only screen and (max-width:1024px) {
+    .skills {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 15px;
+    }
+
+    .skillsSection {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .aboutPage .aboutFirst {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutPage .aboutFirst .personalInfo,
+    .aboutPage .aboutFirst .personalStats {
+        width: 100%;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 15px;
+    }
+
+    .skillsSection {
+        padding: 15px;
+    }
+
+}
+
+
+@media only screen and (max-width:768px) {
+   
+
+    .expEdu {
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+        align-items: flex-start;
+    }
+
+    .expEdu .exp {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:590px) {
+    
+
+    .aboutPage .aboutFirst .personalInfo .my-info {
+        grid-template-columns: repeat(2, 1.5fr);
+        width: 100%;
+    }
+
+    .aboutPage .aboutFirst .personalStats {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+
+    .skills {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+    .aboutPage .aboutFirst .personalInfo h2{
+        font-size: 5vw;
+    }
+    .aboutPage .aboutFirst .personalInfo .my-info{
+        grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    .aboutPage .aboutFirst .personalInfo .my-info h1{
+        font-size: 4vw;
+    }
+}
